@@ -45,7 +45,7 @@ workflow {
     BWA_INDEX( ref_ch )
     BWA_ALIGN( BWA_INDEX.out.bwa_index.combine(reads_ch) ) // https://www.nextflow.io/docs/latest/process.html#understand-how-multiple-input-channels-work
     SAMTOOLS_SORT( BWA_ALIGN.out.aligned_bam )
-    // Enter the rest of the processes for variant calling based on the bash script below
+    // TODO Enter the rest of the processes for variant calling based on the bash script below
 
 }
 
@@ -145,28 +145,28 @@ process SAMTOOLS_SORT {
  * Index the BAM file for visualization purpose
  */
 process SAMTOOLS_INDEX {
-
+    // TODO
 }
 
 /*
  * Calculate the read coverage of positions in the genome.
  */
 process BCFTOOLS_MPILEUP {
-
+    // TODO
 }
 
 /*
  * Detect the single nucleotide variants (SNVs).
  */
 process BCFTOOLS_CALL {
-
+    // TODO
 }
 
 /*
  * Filter and report the SNVs in VCF (variant calling format).
  */
 process VCFUTILS {
-
+    // TODO
 }
 
 /*
