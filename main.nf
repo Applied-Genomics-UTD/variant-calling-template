@@ -62,6 +62,7 @@ workflow {
 process FASTQC {
     tag{"FASTQC ${reads}"}
     label 'process_low'
+    // TODO conda
 
     publishDir("${params.outdir}/fastqc_trim", mode: 'copy')
 
@@ -83,6 +84,7 @@ process FASTQC {
 process BWA_INDEX {
   tag{"BWA_INDEX ${genome}"}
   label 'process_low'
+  // TODO conda
 
   publishDir("${params.outdir}/bwa_index", mode: 'copy')
 
@@ -104,6 +106,7 @@ process BWA_INDEX {
 process BWA_ALIGN {
     tag{"BWA_ALIGN ${sample_id}"}
     label 'process_medium'
+  // TODO conda
 
     publishDir("${params.outdir}/bwa_align", mode: 'copy')
 
@@ -127,6 +130,7 @@ process BWA_ALIGN {
 process SAMTOOLS_SORT {
   tag{"SAMTOOLS_SORT ${sample_id}"}
   label 'process_low'
+  // TODO conda
 
   publishDir("${params.outdir}/bam_align", mode: 'copy')
 
