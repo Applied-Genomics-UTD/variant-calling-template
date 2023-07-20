@@ -2,8 +2,8 @@
 ========================================================================================
    Variant-Calling Nextflow Workflow
 ========================================================================================
-   Github   :
-   Contact  :
+   Github   : // TODO
+   Contact  : // TODO
 ----------------------------------------------------------------------------------------
 */
 
@@ -12,8 +12,9 @@ nextflow.enable.dsl=2
 // Pipeline Input parameters
 
 params.outdir = 'results'
-params.genome = "/workspace/nextflow_tutorial/data/ref_genome/ecoli_rel606.fasta"
-params.reads = "/workspace/nextflow_tutorial/data/trimmed_fastq/*_{1,2}.trim.fastq.gz"
+// TODO Find the urls for these files https://github.com/sateeshperi/nextflow_varcal/tree/master/data
+params.genome = null
+params.reads = null
 
 println """\
          V A R I A N T-C A L L I N G - N F   P I P E L I N E
